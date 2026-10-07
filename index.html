@@ -1,0 +1,132 @@
+<!DOCTYPE html> 
+<html lang="en"> <head> <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Tracker</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+</head> <body>
+<main class="container">
+
+    <!-- Page Heading -->
+    <header class="page-header">
+        <h1>Budget Tracker</h1>
+        <p>Keep track of your expenses and manage your budget effectively.</p>
+    </header>
+
+    <!-- Add Expense Form -->
+    <section class="card">
+        <h2>Add Expense</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="expense-name">Expense Name</label>
+                <input
+                    type="text"
+                    id="expense-name"
+                    name="expense-name"
+                    placeholder="e.g. Groceries"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input
+                    type="number"
+                    id="amount"
+                    name="amount"
+                    placeholder="e.g. 1500"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="">Select a category</option>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="bills">Bills</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                >
+            </div>
+
+            <button type="submit">Add Expense</button>
+        </form>
+    </section>
+
+    <!-- Expense Table -->
+    <section class="card">
+        <h2>Expense Table</h2>
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Groceries</td>
+                        <td>Food</td>
+                        <td>KSh 2,500</td>
+                        <td>2026-10-01</td>
+                    </tr>
+
+                    <tr>
+                        <td>Bus Fare</td>
+                        <td>Transport</td>
+                        <td>KSh 500</td>
+                        <td>2026-10-02</td>
+                    </tr>
+
+                    <tr>
+                        <td>Electricity</td>
+                        <td>Bills</td>
+                        <td>KSh 1,800</td>
+                        <td>2026-10-03</td>
+                    </tr>
+
+                    <tr>
+                        <td>New Shoes</td>
+                        <td>Shopping</td>
+                        <td>KSh 3,000</td>
+                        <td>2026-10-04</td>
+                    </tr>
+
+                    <tr>
+                        <td>Movie</td>
+                        <td>Entertainment</td>
+                        <td>KSh 1,200</td>
+                        <td>2026-10-05</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</main>
+
+</body> 
+</html>
